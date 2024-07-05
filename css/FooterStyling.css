@@ -1,0 +1,32 @@
+.footer-icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-icon .btn {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: #fffcf8 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #a36008;
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+}
+
+.footer-icon .btn i {
+    color: #a36008;
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+}
+
+.footer-icon .btn:hover i {
+    transform: scale(1.2); /* Enlarge the icon on hover */
+}
+
+@media (max-width: 767px) {
+    .footer-icon {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

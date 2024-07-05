@@ -1,0 +1,105 @@
+
+/* Social Icons */
+.social-icons {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.social-icons-container:hover .social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Individual Social Icons */
+.share-link {
+    font-size: 24px;
+    color: #333;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+.share-link:hover {
+    transform: scale(1.2);
+}
+
+/* Social Icons Container */
+.social-icons-container {
+    position: fixed;
+    bottom: 25px; /* Adjusted to move the container up */
+    left: 20px;
+    z-index: 1000;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    .social-icons-container {
+        bottom: 18px; /* Adjusted for smaller screens */
+    }
+    .social-icons {
+        bottom: 150px; /* Adjusted the position of the social icons */
+    }
+    .share-link {
+        font-size: 20px;
+        margin: 3px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-icons-container {
+        bottom: 12px; /* Further adjusted for smaller screens */
+    }
+    .social-icons {
+        bottom: 120px; /* Adjusted the position of the social icons */
+    }
+    .share-link {
+        font-size: 18px;
+        margin: 2px 0;
+    }
+}
+
+
+
+/* Back to top */
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+    text-align: center;
+    width: 40px; /* Adjust width to fit the icon */
+    height: 40px; /* Adjust height to fit the icon */
+    line-height: 40px; /* Center the icon vertically */
+    border-radius: 50%; /* Ensure it's circular */
+}
+
+.back-to-top i {
+    font-size: 20px; /* Adjust icon size as needed */
+    position: relative;
+    top: -5px; /* Move the icon 2px up */
+    right: 0px; /* Move the icon 2px to the right */
+}
+
+
+@media (max-width: 768px) {
+    .back-to-top {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+    }
+}

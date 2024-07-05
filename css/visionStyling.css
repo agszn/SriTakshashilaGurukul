@@ -1,0 +1,77 @@
+/* styles.css */
+
+.visionSTG {
+    background-color: #fff9f0;
+}
+
+.visionSTG_title h2 {
+    background-color: #fff9f0;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.visionSTG_heading h3 {
+    color: #333;
+}
+
+.visionSTG_unique {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.visionSTG_unique-column {
+    width: 250px; /* Fixed width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.visionSTG_unique-column:hover {
+    transform: scale(1.05);
+    background-color: #e0f7ff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.visionSTG_unique-icon-item i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #a36008;
+    transition: color 0.3s ease;
+}
+
+.visionSTG_unique-icon-item:hover i {
+    color: #4d2d03;
+}
+
+.visionSTG_unique-description {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.visionSTG_unique-description p {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .visionSTG_unique-column {
+        width: 45%; /* Two columns for medium screens */
+        gap: 20px; /* Adjust gap for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .visionSTG_unique-column {
+        width: 100%; /* One column for small screens */
+        gap: 10px; /* Adjust gap for small screens */
+    }
+}

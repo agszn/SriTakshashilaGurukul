@@ -1,0 +1,229 @@
+/* Import fonts compatible across all browsers */
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;600&family=Verdana:wght@400;600&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px !important;
+}
+
+/* Adjust font styles for headings and paragraphs */
+h1, h2, h3, .h1, .h2, .h3 {
+    font-weight: 400 !important;
+    font-family: 'Arial', sans-serif !important;
+    color: #001f3f !important;
+    font-size: 24px; /* Fixed font size */
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+    font-weight: 600 !important;
+    font-family: 'Verdana', sans-serif !important;
+    color: #001f3f !important;
+    font-size: 20px; /* Fixed font size */
+}
+
+p {
+    font-weight: 400 !important;
+    font-family: 'Arial', sans-serif !important;
+    color: #001f3f !important;
+    font-size: 16px; /* Fixed font size */
+}
+
+.my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.wow,
+.animated {
+    animation-duration: 2s !important;
+}
+
+/* Button styles */
+.btn.btn-primary {
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background: var(--bs-dark) !important;
+    color: var(--bs-primary) !important;
+}
+
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.stgNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure navbar is above other content */
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.carousel {
+    /* Ensure carousel appears below navbar */
+    margin-top: 60px; /* Adjust this value to match your navbar height */
+}
+
+.stgNav_social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: inherit;
+    margin-left: 5px;
+}
+
+.stgNav_social-icons a:first-child {
+    margin-left: 0;
+}
+
+.stgNav_social-icons a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.stgNav_dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    background-color: #c4d0e2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 25px;
+}
+
+.stgNav_dropdown:hover .stgNav_dropdown-content {
+    display: block;
+}
+
+.stgNav_navbar a,
+.stgNav_navbar .stgNav_dropdown button {
+    color: navy;
+    font-size: 1.5rem;
+}
+
+.stgNav_navbar a:hover,
+.stgNav_navbar .stgNav_dropdown button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.stgNav_company-name {
+    margin-left: 5px;
+    font-size: 2.5rem;
+}
+
+.row.g-4.text-dark.mb-5.display-7 .col-sm-6 {
+    position: relative;
+    padding: 0.75rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    width: calc(50% - 8px);
+    margin-right: 8px;
+    margin-bottom: 16px;
+}
+
+.row.g-4.text-dark.mb-5.display-7 .col-sm-6:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stgNav .container {
+    margin: 0; /* Ensure there's no margin on the container */
+    padding: 0; /* Ensure there's no padding on the container */
+}
+
+.logo-placeholder {
+    border-radius: 50%;
+    margin: 5.2407px; /* Ensure there's a 5.2407px margin around the logo */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin-top: -45px; /* Move the logo up */
+    margin-bottom: 5px; /* Add 1px space below the logo */
+}
+
+.stgNav h1 {
+    font-family: serif;
+    margin: 0; /* Ensure there's no margin */
+    padding: 0; /* Ensure there's no padding */
+    line-height: 1; /* Reduce line height */
+    margin-top: -50px; /* Move the company name up */
+}
+
+/* Tailwind custom styles */
+    @media (max-width: 768px) {
+
+        #menu-toggle {
+            display: block;
+        }
+        #mobile-menu {
+            display: none;
+        }
+        #mobile-menu.show {
+            display: block;
+        }
+
+    }
+
+    .logo {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    nav a {
+        font-size: 1rem; /* Consistent font size across browsers */
+    }
+
+    .logo img {
+        height: 2.5rem; /* Adjust logo size */
+        width: 2.5rem; /* Adjust logo size */
+    }
+
+    /* Ensure consistent sizing and alignment */
+    .flex-shrink-0 img {
+        max-height: 100%;
+        max-width: 100%;
+    }

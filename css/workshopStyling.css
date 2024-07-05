@@ -1,0 +1,27 @@
+
+        /* workshop  */
+        .workshopSTG_card1,
+        .workshopSTG_card2,
+        .workshopSTG_card3 {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #d0bfa9; /* Example border style */
+        }
+
+        .workshopSTG_card1 .card-front img,
+        .workshopSTG_card2 .card-front img,
+        .workshopSTG_card3 .card-front img {
+            width: 100%;
+            height: auto;
+            display: block;
+            background-color: #d0bfa9;
+        }
+
+        .workshopSTG_card1 .card-back,
+        .workshopSTG_card2 .card-back,
+        .workshopSTG_card3 .card-back {
+            padding: 20px;
+            text-align: center;
+            
+        }
+

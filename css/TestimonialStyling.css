@@ -1,0 +1,84 @@
+#testimonial {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* This matches the Bootstrap light background */
+}
+
+#testimonial h1 {
+    font-family: 'Playball', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #343a40; /* Bootstrap dark color */
+}
+
+#testimonial img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #dee2e6; /* Border color matching the Bootstrap theme */
+}
+
+#testimonial .fa-quote-right {
+    color: #6c757d; /* Bootstrap secondary color */
+}
+
+#testimonial h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #343a40; /* Bootstrap dark color */
+}
+
+#testimonial p {
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #6c757d; /* Bootstrap secondary color */
+}
+
+#testimonial .text-primary {
+    color: #007bff !important; /* Bootstrap primary color */
+}
+
+#testimonial .star {
+    margin-bottom: 15px;
+}
+
+#testimonial .card {
+    min-height: 380px; /* Adjust the value as needed */
+    background-color: #fff; /* White background for the cards */
+    border: 1px solid #dee2e6; /* Border color matching the Bootstrap theme */
+}
+
+#testimonial .card-body {
+    padding: 20px;
+}
+
+/* Add responsive design for smallest screens */
+@media (max-width: 576px) {
+    /* #testimonial h1 {
+        font-size: 2rem;
+    }
+
+    #testimonial h4 {
+        font-size: 1rem;
+    }
+
+    #testimonial p {
+        font-size: 0.875rem;
+    } */
+
+    #testimonial .card {
+        min-height: 350px; /* Adjust the value as needed */
+        background-color: #fff; /* White background for the cards */
+        border: 1px solid #dee2e6; /* Border color matching the Bootstrap theme */
+    }
+}
+
+/* 3D Model Canvas Styling */
+.testimonial-3d-model {
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    border: 1px solid #dee2e6; /* Border color matching the Bootstrap theme */
+    margin-top: 15px;
+}

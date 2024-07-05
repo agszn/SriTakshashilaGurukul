@@ -1,0 +1,18 @@
+.carouselSTG {
+    /* Ensure carousel appears below navbar */
+    margin-top: 52px; /* Adjust this value to match your navbar height */
+}
+@media (max-width: 768px) {
+    .carousel {
+    /* Ensure carousel appears below navbar */
+    margin-top: 45px; /* Adjust this value to match your navbar height */
+    }
+
+    .stgNav img.logo-placeholder {
+        margin-top: 0; /* Reset margin-top for small screens */
+        margin-bottom: 0; /* Reset margin-bottom for small screens */
+    }
+    .stgNav h1 {
+        margin-top: 0; /* Reset margin-top for small screens */
+    }
+}
